@@ -9,34 +9,56 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
 </head>
 <body>
-    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <div class="header">
         <div class="container">
             <h1>New York Times Search</h1>
         </div>
+    </div>    
+    <div class="header" align="center">
+        <h1> New York Times Search</h1>
     </div>
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <p>Search Term:</p>
-            </div>
-            <div class="row">
-                <p>Number of Records to Retrieve</p>
-            </div>
-            <div class="row">
-                <p>Start Year (Optional):</p>
-            </div>
-            <div class="row">
-                <p>End Year (Optional): </p>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-primary" id="btnSearch">Search</button>
-                <button type="button" class="btn btn-primary" id="btnClear">Clear Results</button>
-            </div>
-            <div class="row">
-                
+    <div class="homepage-main">
+        <div class="fakeimg" style="height:615px; width:960px">
+            <h6>Search Parameters</h6> 
+            <div class="container">
+                <div class="row">
+                    <label for="name">Search Term</label>
+                    <div class="column">
+                        <input type="text" id="name">
+                    </div>
+                </div>
             </div>  
+        </div> 
+        <br>
+                    
+        <div class="form-group">
+            <label for="name">Number of Records to Retrieve:</label>
+            <select class="form-control" id="sel1">
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+            </select>
+        </div>
+        <br>  
+        <label for="name">Start Year (Optional):</label>
+        <input type="text" id="name">
+        <br>
+        <label for="name">End Year (Optional):</label>
+        <input type="text" id="name">
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>Top Articles</p>
         </div>
     </div>
+    <footer>
+        <div class="footer" align="center">
+            Madewith lots and lots of ♥
+        </div>
+    </footer>
+    <script src="assets/articles.js"></script>
 </body>
 </html>
